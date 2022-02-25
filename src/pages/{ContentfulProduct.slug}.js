@@ -303,7 +303,6 @@ export const productQuery = graphql`
             url
           }
         }
-        id
         index
         kroner
         kroner2
