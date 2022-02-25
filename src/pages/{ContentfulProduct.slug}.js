@@ -24,7 +24,7 @@ const ProductPage = (props) => {
     .filter((product) => product.slug === `/${slug}`)
     .map((product) => {
       return (
-        <div key={product.id}>
+        <div key={product.slug}>
           <h1 className="product-title">{product.productName}</h1>
         </div>
       );
@@ -55,7 +55,7 @@ const ProductPage = (props) => {
 
       return (
         <>
-          <div key={product.id}>
+          <div key={product.slug}>
             <div className="slide-container">
               {slideImages.length > 1 ? (
                 <Slide>
