@@ -18,6 +18,8 @@ const ProductPage = (props) => {
   let products = props.data.allContentfulProduct.nodes;
   let slug = props.params.slug;
 
+  console.log(props);
+
   const productTitle = products
     .filter((product) => product.slug === `/${slug}`)
     .map((product) => {
