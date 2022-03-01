@@ -46,6 +46,9 @@ module.exports = {
       options: {
         accessToken: process.env.GATSBY_CONTENTFUL_TOKEN,
         spaceId: process.env.GATSBY_CONTENTFUL_ID,
+
+        // not deploying correctly from Contentful
+
         useNameForId: false,
       },
     },
