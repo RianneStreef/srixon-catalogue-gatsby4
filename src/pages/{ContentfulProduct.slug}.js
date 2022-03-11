@@ -310,7 +310,7 @@ export const productQuery = graphql`
         kroner3
         kroner4
         new
-        availableWhen
+
         pound
         pound2
         pound3
