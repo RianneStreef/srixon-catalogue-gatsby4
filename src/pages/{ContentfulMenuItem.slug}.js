@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 import home from "../images/home.png";
 import back from "../images/back.png";
 
-import ballMatrix from "../images/Golf-Ball-MATRIX-v3.jpg";
+import ballMatrix from "../images/Golf-Ball-MATRIX.jpg";
 import customShafts from "../images/custom.jpg";
 
 import Layout from "../components/Layout";
