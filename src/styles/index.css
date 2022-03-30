@@ -95,10 +95,3 @@
     transform: scale(1.5);
   }
 }
-
-@media only screen and (min-width: 500px) {
-  .loading-page {
-    background: url("../images/loader.jpg");
-    background-position: center;
-  }
-}
