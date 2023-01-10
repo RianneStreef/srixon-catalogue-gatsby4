@@ -1,3 +1,21 @@
+.product-page {
+  padding: 10px;
+}
+.product-page-tech {
+  background: url("../images/product-background.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+}
+
+.product-page-tech h5 {
+  color: white;
+}
+
+.product-intro {
+  padding: 10px;
+}
+
 .specs-img {
   width: 100%;
 }
