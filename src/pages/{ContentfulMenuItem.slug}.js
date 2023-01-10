@@ -21,6 +21,8 @@ const CategoryPage = (props) => {
   let products = props.data.allContentfulProduct.nodes;
   let slug = props.params.slug;
 
+  console.log(props.data);
+
   const categoryTitle = categories
     .filter((category) => category.category === slug)
     .map((category) => {
@@ -76,7 +78,55 @@ const CategoryPage = (props) => {
   });
 
   const productList = products
-    .filter((product) => product.categorySlug === slug)
+    .filter(
+      (product) =>
+        product.categorySlug === slug && product.categorySlug !== "clubs"
+    )
+    .map((product) => {
+      return (
+        <Link to={product.slug} key={product.id} className="product-listing">
+          <img
+            className="product-list-image"
+            src={product.productImage.file.url}
+            alt={product.productImageAlt}
+          />
+
+          <div className="product-list-title">
+            <p>
+              {product.new ? <p className="new">new!</p> : null}
+              <p className="product-name">{product.productName}</p>
+            </p>
+          </div>
+        </Link>
+      );
+    });
+
+  const productListClubsMen = products
+    .filter(
+      (product) => product.categorySlug == "clubs" && product.women !== true
+    )
+    .map((product) => {
+      return (
+        <Link to={product.slug} key={product.id} className="product-listing">
+          <img
+            className="product-list-image"
+            src={product.productImage.file.url}
+            alt={product.productImageAlt}
+          />
+
+          <div className="product-list-title">
+            <p>
+              {product.new ? <p className="new">new!</p> : null}
+              <p className="product-name">{product.productName}</p>
+            </p>
+          </div>
+        </Link>
+      );
+    });
+  const productListClubsWomen = products
+    .filter(
+      (product) => product.categorySlug == "clubs" && product.women === true
+    )
     .map((product) => {
       return (
         <Link to={product.slug} key={product.id} className="product-listing">
@@ -138,19 +188,26 @@ const CategoryPage = (props) => {
 
               {productList}
               {slug === "clubs" ? (
-                <a
-                  href={customShaftsPDF}
-                  target="blank"
-                  className="product-listing"
-                >
-                  <img
-                    className="product-list-image"
-                    src={customShafts}
-                    alt="Srixon Custom Shafts"
-                  />
+                <>
+                  <h2 class="category-sub-list-title">Men</h2>
+                  <div>{productListClubsMen}</div>
+                  <h2 class="category-sub-list-title">Women</h2>
 
-                  <p className="product-list-title">Custom Shafts</p>
-                </a>
+                  <div>{productListClubsWomen}</div>
+                  <a
+                    href={customShaftsPDF}
+                    target="blank"
+                    className="product-listing"
+                  >
+                    <img
+                      className="product-list-image"
+                      src={customShafts}
+                      alt="Srixon Custom Shafts"
+                    />
+
+                    <p className="product-list-title">Custom Shafts</p>
+                  </a>
+                </>
               ) : null}
             </div>
           </div>
@@ -202,6 +259,7 @@ export const categoryQuery = graphql`
         id
         index
         new
+        women
         productName
         slug
         categorySlug
