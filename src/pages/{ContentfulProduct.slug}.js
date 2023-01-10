@@ -105,7 +105,7 @@ const ProductPage = (props) => {
             >
               {product.techTitle1 && (
                 <div className="tech-description">
-                  <h5>TECHNOLOGY</h5>
+                  <h3>TECHNOLOGY</h3>
                   {product.techImg1 && (
                     <img
                       src={product.techImg1.file.url}
