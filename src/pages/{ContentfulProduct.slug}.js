@@ -320,10 +320,6 @@ export const productQuery = graphql`
         women
         pound
 
-        price1title
-        price2title
-        price3title
-        price4title
         productImage {
           file {
             url
