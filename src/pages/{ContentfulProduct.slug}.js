@@ -306,9 +306,7 @@ export const productQuery = graphql`
         colors
         availableWhen
         euro
-        euro2
-        euro3
-        euro4
+
         headerImgs {
           file {
             url
@@ -317,15 +315,11 @@ export const productQuery = graphql`
         id
         index
         kroner
-        kroner2
-        kroner3
-        kroner4
+
         new
         women
         pound
-        pound2
-        pound3
-        pound4
+
         price1title
         price2title
         price3title
@@ -342,9 +336,7 @@ export const productQuery = graphql`
           }
         }
         swiss
-        swiss2
-        swiss3
-        swiss4
+
         techDescription1 {
           techDescription1
         }
