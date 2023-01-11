@@ -103,7 +103,7 @@ const CategoryPage = (props) => {
 
   const productListClubsMen = products
     .filter(
-      (product) => product.categorySlug == "clubs" && product.women !== true
+      (product) => product.categorySlug === "clubs" && product.women !== true
     )
     .map((product) => {
       return (
@@ -125,7 +125,7 @@ const CategoryPage = (props) => {
     });
   const productListClubsWomen = products
     .filter(
-      (product) => product.categorySlug == "clubs" && product.women === true
+      (product) => product.categorySlug === "clubs" && product.women === true
     )
     .map((product) => {
       return (
