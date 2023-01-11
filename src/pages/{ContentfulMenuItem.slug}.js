@@ -189,11 +189,11 @@ const CategoryPage = (props) => {
               {productList}
               {slug === "clubs" ? (
                 <>
-                  <h2 class="category-sub-list-title">Men</h2>
+                  {/* <h2 class="category-sub-list-title">Men</h2> */}
                   <div>{productListClubsMen}</div>
-                  <h2 class="category-sub-list-title">Women</h2>
+                  {/* <h2 class="category-sub-list-title">Women</h2>
 
-                  <div>{productListClubsWomen}</div>
+                  <div>{productListClubsWomen}</div> */}
                   <a
                     href={customShaftsPDF}
                     target="blank"
