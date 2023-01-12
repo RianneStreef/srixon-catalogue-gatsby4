@@ -259,7 +259,6 @@ export const categoryQuery = graphql`
         id
         index
         new
-        women
         productName
         slug
         categorySlug
