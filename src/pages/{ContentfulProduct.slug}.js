@@ -317,7 +317,7 @@ export const productQuery = graphql`
         kroner
 
         new
-        women
+
         pound
 
         productImage {
