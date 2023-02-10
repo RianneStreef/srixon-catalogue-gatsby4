@@ -18,7 +18,7 @@ const ProductPage = (props) => {
   let products = props.data.allContentfulProduct.nodes;
   let slug = props.params.slug;
 
-  console.log(props);
+  console.log(products);
 
   const productTitle = products
     .filter((product) => product.slug === `/${slug}`)
@@ -264,7 +264,7 @@ const ProductPage = (props) => {
                   </p>
                 </>
               )}
-              {product.availableWhen && (
+              {product.euro === null && (
                 <p>In store in {product.availableWhen}</p>
               )}
             </div>
