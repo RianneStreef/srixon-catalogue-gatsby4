@@ -41,20 +41,20 @@ const DemoDayPage = () => {
         <div className="flag-container">
           <a
             className="demo-link"
-            href="https://www.srixoneurope.com/en/event-days.html"
+            href="https://eu.dunlopsports.com/srixon/events-sx.html"
             target="blank"
           >
             <img className="flag-link" src={EUFlag} alt="european flag" />
             <p>EU Events website</p>
           </a>
-          <a
+          {/* <a
             className="demo-link"
             href="https://www.srixon.co.uk/en/event-days.html"
             target="blank"
           >
             <img className="flag-link" src={UKFlag} alt="united kingdom flag" />
             <p>UK Events website</p>
-          </a>
+          </a> */}
         </div>
       </div>
       <div className="padding-sides">

@@ -13,7 +13,7 @@ import Layout from "../components/Layout";
 import "../styles/categories.css";
 
 import golfBallMatrix from "../images/Golf-Ball-MATRIX.pdf";
-import customShaftsPDF from "../images/Custom-Shafts-v2.pdf";
+import customShaftsPDF from "../images/Mk-II-Field-Manual-Europe_lr.pdf";
 
 const CategoryPage = (props) => {
   let categories = props.data.allContentfulMenuItem.nodes;
