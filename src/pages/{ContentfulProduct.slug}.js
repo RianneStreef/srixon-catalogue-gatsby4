@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import ReactMarkdown from "react-markdown";
 
 import Layout from "../components/Layout";
+import Consent from "../components/Consent";
 
 import { Slide } from "react-slideshow-image";
 
@@ -17,7 +18,6 @@ import back from "../images/back.png";
 const ProductPage = (props) => {
   let products = props.data.allContentfulProduct.nodes;
   let slug = props.params.slug;
-
 
   const productTitle = products
     .filter((product) => product.slug === `/${slug}`)
@@ -54,6 +54,7 @@ const ProductPage = (props) => {
 
       return (
         <>
+          <Consent />
           <div key={product.slug}>
             <div className="slide-container">
               {slideImages.length > 1 ? (

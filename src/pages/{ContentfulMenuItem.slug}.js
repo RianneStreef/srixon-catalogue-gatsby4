@@ -9,6 +9,7 @@ import ballMatrix from "../images/Golf-Ball-MATRIX-v3.jpg";
 import customShafts from "../images/custom.jpg";
 
 import Layout from "../components/Layout";
+import Consent from "../components/Consent";
 
 import "../styles/categories.css";
 
@@ -151,6 +152,7 @@ const CategoryPage = (props) => {
         <meta name="robots" content="noindex" />
         <meta name="robots" content="nofollow" />
       </Helmet>
+      <Consent />
       <div className="category-title">
         <Link to="/categories" className="nav-link">
           <img src={back} className="nav-icon-back" />

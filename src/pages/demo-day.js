@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import "../styles/demo-day.css";
 
 import Layout from "../components/Layout";
+import Consent from "../components/Consent";
 
 import home from "../images/home.png";
 import back from "../images/back.png";
@@ -20,6 +21,7 @@ const DemoDayPage = () => {
         <meta name="robots" content="noindex" />
         <meta name="robots" content="nofollow" />
       </Helmet>
+      <Consent />
       <div className="category-title">
         <Link to="/categories" className="nav-link">
           <img src={back} className="nav-icon-back" alt="back link" />

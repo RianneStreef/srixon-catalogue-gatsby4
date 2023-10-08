@@ -9,21 +9,6 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        // You can add multiple tracking ids and a pageview event will be fired for all of them.
-        trackingIds: ["G-E8M2GHGK52", "G-9YM7X9LBL5"],
-        pluginConfig: {
-          // Puts tracking script in the head instead of the body
-          head: true,
-        },
-        // defaults to false
-        enableWebVitalsTracking: true,
-        // Setting this parameter is also optional
-        respectDNT: true,
-      },
-    },
-    {
       resolve: "gatsby-plugin-manifest",
       options: {
         name: "Srixon EU & Uk Catalogue",
