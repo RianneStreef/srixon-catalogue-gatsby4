@@ -96,13 +96,7 @@ const ProductPage = (props) => {
                 {product.productIntro.productIntro}
               </ReactMarkdown>
             )}
-            <div
-              className={`${
-                product.new && product.categorySlug === "clubs"
-                  ? "product-page-tech"
-                  : "product-page"
-              }`}
-            >
+            <div className="product-page">
               {product.techTitle1 && (
                 <div className="tech-description">
                   <h3>TECHNOLOGY</h3>
@@ -306,6 +300,9 @@ export const productQuery = graphql`
         colors
         availableWhen
         euro
+        euro2
+        euro3
+        euro4
 
         headerImgs {
           file {
@@ -315,10 +312,16 @@ export const productQuery = graphql`
         id
         index
         kroner
+        kroner2
+        kroner3
+        kroner4
 
         new
 
         pound
+        pound2
+        pound3
+        pound4
 
         productImage {
           file {
@@ -332,6 +335,9 @@ export const productQuery = graphql`
           }
         }
         swiss
+        swiss2
+        swiss3
+        swiss4
 
         techDescription1 {
           techDescription1
