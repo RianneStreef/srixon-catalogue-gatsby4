@@ -339,6 +339,11 @@ export const productQuery = graphql`
         swiss3
         swiss4
 
+        price1title
+        price2title
+        price3title
+        price4title
+
         techDescription1 {
           techDescription1
         }
