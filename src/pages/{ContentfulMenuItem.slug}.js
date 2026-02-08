@@ -13,8 +13,8 @@ import Consent from "../components/Consent";
 
 import "../styles/categories.css";
 
-import golfBallMatrix from "../images/Golf-Ball-MATRIX.pdf";
-import customShaftsPDF from "../images/Mk-II-Field-Manual-Europe_lr.pdf";
+import golfBallMatrix from "../images/SRIXON-GOLF-BALL-MATRIX-26.pdf";
+import customShaftsPDF from "../images/SRX_ZXi-Field-Manual-2026-EU-v2-LR.pdf";
 
 const CategoryPage = (props) => {
   let categories = props.data.allContentfulMenuItem.nodes;
@@ -79,7 +79,7 @@ const CategoryPage = (props) => {
   const productList = products
     .filter(
       (product) =>
-        product.categorySlug === slug && product.categorySlug !== "clubs"
+        product.categorySlug === slug && product.categorySlug !== "clubs",
     )
     .map((product) => {
       return (
@@ -102,7 +102,7 @@ const CategoryPage = (props) => {
 
   const productListClubsMen = products
     .filter(
-      (product) => product.categorySlug === "clubs" && product.women !== true
+      (product) => product.categorySlug === "clubs" && product.women !== true,
     )
     .map((product) => {
       return (
@@ -124,7 +124,7 @@ const CategoryPage = (props) => {
     });
   const productListClubsWomen = products
     .filter(
-      (product) => product.categorySlug === "clubs" && product.women === true
+      (product) => product.categorySlug === "clubs" && product.women === true,
     )
     .map((product) => {
       return (
